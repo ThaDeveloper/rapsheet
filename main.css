@@ -362,7 +362,6 @@ li{
 }
 
 .img-wrapper{
-    /* transform: translate(-50%, -50%); */
     position: relative;
 }
 
@@ -388,14 +387,15 @@ li{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 650ms ease-in-out;
-    background: rgba(204,83,51, 0.9);
+    background: rgba(204,83,51, 0.85);
 }
-
-.img-wrapper:hover, .overlay:hover {
+.img-wrapper:hover .overlay {
+    -webkit-animation: animation 1s linear both;
+    animation: animation 1s linear both;
     opacity: 1;
     cursor: pointer;
 }
+
  /*Start contact*/
  .contact{
      background-color: #221e3f;
