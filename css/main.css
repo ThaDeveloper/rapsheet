@@ -415,7 +415,7 @@ li{
      padding: 1rem;
      margin-bottom: 10px;
      border: none;
-     outline-color: #cc5333;
+     outline-color: #221e3f;
      border-radius: 0.3rem;
  }
 
@@ -435,6 +435,9 @@ li{
      color: #221e3f;
  }
 
+ input[type=text]:focus, textarea:focus {
+    background-color: #fff;
+}
  /*Start footer*/
  .copyright{ 
      width: 100%;
@@ -466,6 +469,11 @@ li{
  .copyright{
      font-size: 1.4rem;
  }
+ 
+ #name-error, #email-error, #message-error{
+    color:rgba(217, 92, 92, 0.95);
+ }
+
 
  /*Start animations */
  @keyframes pulse{
@@ -564,3 +572,4 @@ li{
     }
 
  }
+ 
