@@ -30,11 +30,10 @@ $().ready(function () {
         if ( !name || !email || !message){
             return alertify.error('All fields are required!');
         }
-        var name_error = $('#name-error'),
-                        email_eror = $('#email-error'),
-                        message_error = $('#message-error');
-        
-        if(name_error.length > 0 || email_eror.length > 0 || message_error.length > 0){
+        var name_error = $('#name-error')[0].innerHTML,
+                        email_error = $('#email-error')[0].innerHTML,
+                        message_error = $('#message-error')[0].innerHTML;
+        if(name_error.length > 0 || email_error.length > 0 || message_error.length > 0){
             return alertify.error('Please fix all the errors before submission!');
         }
         var formData = new FormData(this);
